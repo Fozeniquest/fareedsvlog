@@ -1,36 +1,111 @@
-<title>Fareed Olaseni</title>
-<link rel="stylesheet" href="style.css">
-<style>
-    body {
-        font-family: "Gill Sans Extrabold", sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
+<!DOCTYPE html>
+<html lang="en">
 
-    }
+<head>
+    <title>Fareed Olaseni</title>
+    <style>
+        body {
+            font-family: "Gill Sans Extrabold", sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-        background-color: #CACC90;
-        color: #5D675B;
-        padding: 10px;
-        text-align: center;
-    }
+        header {
+            background-color: #CACC90;
+            color: #5D675B;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    h2,
-    h3 {
-        margin: 0;
-        padding: 9px 0;
-    }
+        h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
 
-    .content {
-        padding: 20px;
-        text-align: center;
-    }
+        h3 {
+            font-size: 2em;
+            margin: 20px 0 10px;
+        }
 
-    .interests {
-        margin-top: 20px;
-    }
-</style>
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .interests {
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        pre {
+            background-color: #333;
+            color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: auto;
+            white-space: pre-wrap;
+        }
+
+        .highlight {
+            color: #CACC90;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #5D675B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #CACC90;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add transitions */
+        h2, h3, p {
+            transition: color 0.3s ease;
+        }
+
+        h2:hover, h3:hover, p:hover {
+            color: #CACC90;
+        }
+
+        /* Add media queries for responsiveness */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 2em;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 20px 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -39,19 +114,17 @@
     </header>
     <div class="content">
         <h3>About Me</h3>
-        <p>I am a 14-year-old student starting my first year at Harmony School of Science in Houston this year. I am super excited to be going to a new school and new grad since it will be first year of high school. I can’t wait to experience all the new things high school has to offer, from new classes and teachers all the way to new friends and joining some clubs maybe.</p>
-        <p>I love playing basketball and soccer. These sports are really fun and help me stay active and healthy. I am also really interested in vehicles. I enjoy keeping up with the latest car designs and technologies.Hopefully, high school is going to be a great time for me to explore my interests and grow as a person.</p>
-
+        <p>I am a <span class="highlight">14-year-old student</span> starting my first year at Harmony School of Science in Houston this year. I am super excited to be going to a new school and new grade since it will be my first year of high school. I can't  wait to experience all the new things high school has to offer, from new classes and teachers to new friends and joining some clubs maybe.</p>
+        <p>I love playing <span class="highlight">basketball</span> and <span class="highlight">soccer</span>. These sports are really fun and help me stay active and healthy. I am also really interested in <span class="highlight">vehicles</span>. I enjoy keeping up with the latest car designs and technologies. Hopefully, high school is going to be a great time for me to explore my interests and grow as a person.</p>
 
         <h3>Specific Interests</h3>
-        <p class="interests"><i></i></p>
-
-        <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣠⣤⣤⣤⣤⣤⣤⣤⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        <div class="interests">
+            <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣠⣤⣤⣤⣤⣤⣤⣤⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⢀⣀⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣀⡀⠀⠀⠀⠀⠀
 ⣀⣤⣴⣶⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⠋⠉⣉⣉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣉⣉⠉⠙⠛⠛⠛⠿⠿⣿⣿⣿⣿⣿⣶⣤⣤⣀
 ⢻⣿⣿⠿⠛⠛⢉⣁⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣤⣈⡉⠛⠛⠿⣿⣿⠏
 ⠀⠁⣠⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣄⠈⠀
-⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⠿⠛⠛⠛⠛⠛⢻⣿⣿⣿⣿⣿⣦⣴⣿⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠿⣿⣿⣿⣿⣿⣿⠟⠃⠀⠀
+⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⠿⠛⠛⠛⠛⠛⢻⣿⣿⣿⣿⣿⣦⣴⣿⣿⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠿⣿⣿⣿⣿⣿⣿⠟⠃⠀⠀
 ⠀⠀⠀⠀⠈⠛⠿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⠿⠛⠁⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -67,11 +140,10 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         </pre>
         <p class="interests">Teslas! </p>
-        <p> I've always been a big fan of Teslas. They have so many cool features, such as Autopilot, Caraoke, and I especially love the sleek look of the screen. It's so simplistic. </p>
+                <p> I've always been a big fan of Teslas. They have so many cool features, such as Autopilot, Caraoke, and I especially love the sleek look of the screen. It's so simplistic. </p>
 
-
-        <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="style.css">
+            <img id="image" src="https://www.teslarati.com/wp-content/uploads/2024/02/tesla-roadster-new.jpeg" alt="Tesla Roadster">
